@@ -1,0 +1,2 @@
+# TwitterNetworkAnalyzer
+ Tool for gathering followers and tweets data for your twitter network(s). Enter your accounts in the excel template and it will output an sqlite database with date, network, twitter handle, number of followers, number of tweets for each individual account as well as a summary for each network of accounts. Schedule to run daily and track follower growth and number of tweets for your twitter network(s) over time.
