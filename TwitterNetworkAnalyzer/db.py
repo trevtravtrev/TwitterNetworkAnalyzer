@@ -10,11 +10,11 @@ def get_cursor(connection):
 
 
 def create_summary_table(cursor):
-    return cursor.execute('''CREATE TABLE summary IF NOT EXISTS (date text, network text, followers integer, tweets integer)''')
+    return cursor.execute('''CREATE TABLE IF NOT EXISTS summary (date text, network text, followers integer, tweets integer)''')
 
 
 def create_accounts_table(cursor):
-    return cursor.execute('''CREATE TABLE accounts IF NOT EXISTS (date text, network text, account text, followers integer, tweets integer)''')
+    return cursor.execute('''CREATE TABLE IF NOT EXISTS accounts (date text, network text, account text, followers integer, tweets integer)''')
 
 
 def insert_summary_row(cursor, date, network, followers, tweets):
